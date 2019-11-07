@@ -1,0 +1,26 @@
+/*--------------- N A V I G A T I O N ---------------*/
+.nav-head{
+    font-size: 6vw;
+}
+
+.nv-el{
+    font-size: 2.8vw;
+}
+/*---------------------------------------------------*/
+
+.main{
+    padding: 1%;
+}
+.main-sub{
+    padding: 3%;
+    margin-top: 11%;
+}
+.room{
+    background-color: #5c00e6;
+    padding: 15%;
+    margin: 5% 0;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+}
