@@ -92,6 +92,29 @@
     </div>
 
 <!--JS FILE INCLUDED-->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDE_Zh2tDCUbFLHW26k2BDlYRefnQIfCNg",
+        authDomain: "homie-ffc45.firebaseapp.com",
+        databaseURL: "https://homie-ffc45.firebaseio.com",
+        projectId: "homie-ffc45",
+        storageBucket: "homie-ffc45.appspot.com",
+        messagingSenderId: "123241963521",
+        appId: "1:123241963521:web:a264b2b022d10fc0cc6000",
+        measurementId: "G-66SYQGKCGE"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
 <script src="controls.js"></script>
 <script src="http://localhost:8000/controls/script"></script>
 </body>
