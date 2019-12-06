@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Controls</title>
+    
+    <!--metroui css cdn-->
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!--Bootstrap and javascript CDNs-->
     <link rel=”stylesheet” href=”http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css”>
@@ -19,7 +23,10 @@
 
     <!--MAIN CSS FILE-->
     <link rel="stylesheet" href="controls.css">
-    <link rel="stylesheet" href="http://localhost:8000/control/css">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!--GOOGLE FONTS CSS FILE-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy&display=swap" rel="stylesheet">
@@ -56,36 +63,77 @@
     <!---------------------------------------------------------------------------------------------------->
 
     <!--------------------------Main Content-------------------------------------------------->
-    <div class="outer">
+     <div class="outer">
         <div type="" class="collapsible appliance"><span class="label">Appliance 1</span>
             <label class="switch">
-                <input type="checkbox" id="switch1">
+                <input type="checkbox">
                 <span class="slider round"></span>
             </label></div>
         <div class="content">
-            Scheduler
+                <div type="" class="collapsible appliance"><span class="label">Schedule</span>
+                    <label class="switch">
+                        <input type="checkbox"  id="switch1" id="check">
+                        <span class="slider round scheduler"></span>
+                    </label>
+                </div>
+                <div class="content scheduler-content">
+                    <p class="sc-btn">From</p>
+                    <input data-role="timepicker" data-seconds="false" data-show-labels="true" data-value="0"
+                           data-distance="1">
+                    <p class="sc-btn">To</p>
+                    <input data-role="timepicker" data-seconds="false" data-show-labels="true" data-value="0"
+                           data-distance="1">
+                    <button type="button" class="btn btn-light sc-btn">Schedule</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="outer">
         <div type="" class="collapsible appliance"><span class="label">Appliance 2</span>
             <label class="switch">
-                <input type="checkbox" id="switch2">
+                <input type="checkbox">
                 <span class="slider round"></span>
             </label></div>
         <div class="content">
-            Scheduler
+            <div type="" class="collapsible appliance"><span class="label">Schedule</span>
+                <label class="switch">
+                    <input type="checkbox" id="switch2">
+                    <span class="slider round scheduler"></span>
+                </label></div>
+            <div class="content scheduler-content">
+                <p class="sc-btn">From</p>
+                <input data-role="timepicker" data-seconds="false" data-show-labels="true" data-value="0"
+                       data-distance="1">
+                <p class="sc-btn">To</p>
+                <input data-role="timepicker" data-seconds="false" data-show-labels="true" data-value="0"
+                       data-distance="1">
+                <button type="button" class="btn btn-light sc-btn" id="scbtn">Schedule</button>
+            </div>
         </div>
     </div>
 
     <div class="outer">
         <div type="" class="collapsible appliance"><span class="label">Appliance 3</span>
             <label class="switch">
-                <input type="checkbox" id="switch3">
-                <span class="slider round"></span>
+                <input type="checkbox">
+                <span class="slider round"></
             </label></div>
         <div class="content">
-            Scheduler
+            <div type="" class="collapsible appliance"><span class="label">Schedule</span>
+                <label class="switch">
+                    <input type="checkbox" id="switch3">
+                    <span class="slider round scheduler"></span>
+                </label></div>
+            <div class="content scheduler-content">
+                <p class="sc-btn">From</p>
+                <input data-role="timepicker" data-seconds="false" data-show-labels="true" data-value="0"
+                       data-distance="1">
+                <p class="sc-btn">To</p>
+                <input data-role="timepicker" data-seconds="false" data-show-labels="true" data-value="0"
+                       data-distance="1">
+                <button type="button" class="btn btn-light sc-btn">Schedule</button>
+            </div>
         </div>
     </div>
     <!---------------------------------------------------------------------------------------------------->
@@ -116,6 +164,6 @@
       firebase.analytics();
     </script>
 <script src="controls.js"></script>
-<script src="http://localhost:8000/controls/script"></script>
+        <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
 </body>
 </html>
