@@ -130,3 +130,11 @@ input:checked + .slider:before {
     font-size: 3vw;
     margin: 20% 40% -4% -1%;
 }
+
+/*------------------------- S C H E D U L E R -------------------------*/
+/*.scheduler-content{*/
+    /*display: none;*/
+/*}*/
+.sc-btn{
+    margin-top: 7%;
+}
