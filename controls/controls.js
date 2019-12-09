@@ -32,7 +32,7 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-var apl = document.getElementsByClassName("appliance");
+var apl = document.getElementsByClassName("aplmain");
 
 apl[0].addEventListener("click",function(){
     var database = firebase.database().ref();
