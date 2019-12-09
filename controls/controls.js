@@ -8,13 +8,13 @@ ref.on("value",function(snapshot){
 });
 
 var ref2 = firebase.database().ref("Room1/Appliance-2/state");
-ref.on("value",function(snapshot){
+ref2.on("value",function(snapshot){
 	console.log(snapshot.val());
 	document.getElementById("switch2").checked = snapshot.val();
 });
 
 var ref3 = firebase.database().ref("Room1/Appliance-3/state");
-ref.on("value",function(snapshot){
+ref3.on("value",function(snapshot){
 	console.log(snapshot.val());
 	document.getElementById("switch3").checked = snapshot.val();
 });
