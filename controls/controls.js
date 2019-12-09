@@ -1,6 +1,25 @@
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
+var ref = firebase.database().ref("Room1/Appliance-1/state");
+ref.on("value",function(snapshot){
+	console.log(snapshot.val());
+	document.getElementById("switch1").checked = snapshot.val();
+});
+
+var ref2 = firebase.database().ref("Room1/Appliance-2/state");
+ref.on("value",function(snapshot){
+	console.log(snapshot.val());
+	document.getElementById("switch2").checked = snapshot.val();
+});
+
+var ref3 = firebase.database().ref("Room1/Appliance-3/state");
+ref.on("value",function(snapshot){
+	console.log(snapshot.val());
+	document.getElementById("switch3").checked = snapshot.val();
+});
+
+
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
